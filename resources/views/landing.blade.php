@@ -46,7 +46,10 @@
 <main>
     <section id="hero-section">
         <div class="container">
-            <div class="header-illustration">
+            <div class="block lg:hidden">
+                <img src="/static/illustrations/endingAsset.svg" alt="Freedom for Children">
+            </div>
+            <div class="header-illustration hidden lg:block">
                 <img src="/static/illustrations/endingAsset.svg" alt="Freedom for Children">
             </div>
             <h1 class="h3">Introducing</h1>
