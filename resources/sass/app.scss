@@ -1,1 +1,118 @@
-//
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+//Fonts
+@import url("https://use.typekit.net/hse1jve.css");
+
+
+//Variables
+
+
+//Colors
+$background: #FFFCF8;
+$primary: #E63B3B;
+$secondary-1: #FFBD45;
+$secondary-2: #EE772D;
+$secondary-3: #6D9BBC;
+.primary-color {
+  color: $primary
+}
+.secondary-1 {
+  color: #FFBD45;
+}
+.secondary-2 {
+  color: #EE772D;
+}
+.secondary-3 {
+  color: #6D9BBC;
+}
+
+
+//Global
+*, html, body {
+  font-family: "Soleil", sans-serif;
+  background: $background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: inherit;
+  font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.container {
+  margin: 0 auto !important;
+  padding: 0 20px;
+}
+
+//Typography
+
+.body-text {
+  font-family: "Soleil", sans-serif;
+  font-size: 1rem;
+}
+
+.sub-text {
+  font-family: "Soleil", sans-serif;
+  font-size: 1.414rem;
+}
+
+.sans-heading {
+  font-family: "Soleil", sans-serif;
+  font-size: 1.414rem;
+  font-weight: bold;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.serif-heading {
+  font-family: "Henriette", sans-serif;
+  font-size: 1.414rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-family: "Henriette", sans-serif;
+  font-size: 1.999rem;
+}
+
+.h2 {
+  font-family: "Henriette", sans-serif;
+  font-size: 2.827rem;
+}
+
+.h1 {
+  font-family: "Henriette", sans-serif;
+  font-size: 3.998rem;
+}
+
+
+//Navigation
+.navbar {
+  padding: 20px 30px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .brand {
+    max-width: 240px;
+    position: relative;
+    bottom: 3px;
+  }
+
+  .nav-link {
+    font-family: "Henriette", sans-serif;
+    font-size: 20px;
+    padding: 20px 20px;
+    font-weight: bold;
+  }
+
+}
+
