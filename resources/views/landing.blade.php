@@ -18,22 +18,29 @@
         <div class="brand block">
             <img src="/static/tde_logo_color.png" alt="The Dot Express">
         </div>
-        <div class="left-links block flex-grow">
-            <a href="/" class="nav-link block lg:inline-block">Platform</a>
-            <a href="/" class="nav-link block lg:inline-block">Book</a>
-            <a href="/" class="nav-link block lg:inline-block">About</a>
+        <div class="left-links hidden lg:block flex-grow">
+            <a href="#platform-introduction" class="nav-link block lg:inline-block">Platform</a>
+            <a href="#book" class="nav-link block lg:inline-block">Book</a>
+            <a href="#about-us" class="nav-link block lg:inline-block">About</a>
         </div>
 
-        {{--<div class="block lg:hidden">--}}
-        {{--<button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">--}}
-        {{--<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>--}}
-        {{--</button>--}}
-        {{--</div>--}}
-
-        <div class="block">
-            <a href="/" class="nav-link block lg:inline-block">Buy the Book</a>
-            <a href="/" class="nav-link block lg:inline-block">Contact Us</a>
+        <div class="block lg:hidden">
+        <button id="mobile-menu" class="flex items-center px-3 py-2 text-black border-red-400 hover:text-white hover:border-white">
+            <img class="w-8 py-2" src="/static/menu.png" alt="">
+        </button>
         </div>
+
+        <div class="hidden lg:block">
+            <a href="https://www.amazon.in/that-went-walk-Short-Stories/dp/8193926005" target="_blank" class="nav-link block lg:inline-block">Buy the Book</a>
+
+        </div>
+    </div>
+
+    <div class="mobile-navbar text-center">
+        <a href="#platform-introduction" class="nav-link block lg:inline-block">Platform</a>
+        <a href="#book" class="nav-link block lg:inline-block">Book</a>
+        <a href="#about-us" class="nav-link block lg:inline-block">About</a>
+        <a href="https://www.amazon.in/that-went-walk-Short-Stories/dp/8193926005" target="_blank" class="nav-link block lg:inline-block">Buy the Book</a>
     </div>
 </nav>
 <main>
@@ -70,12 +77,15 @@
     <section id="platform-introduction">
         <div class="container">
             <div class="platform-point flex flex-wrap flex-row-reverse">
-                <div class="illustration w-4/12">
-                    <div class="illustration-container">
+                <div class="illustration w-full lg:w-4/12">
+                    <div class="w-full lg:hidden mb-12">
+                        <img src="/static/illustrations/storytellingAsset.svg" alt="Storytelling is powerful">
+                    </div>
+                    <div class="illustration-container hidden lg:block">
                         <img src="/static/illustrations/storytellingAsset.svg" alt="Storytelling is powerful">
                     </div>
                 </div>
-                <div class="text-content w-8/12">
+                <div class="text-content w-full lg:w-8/12">
                     <h3 class="h2">Storytelling as a powerful medium of expression.</h3>
                     <p class="sub-text">From granny’s tales to bedtime stories, didn’t every story leave you with a
                         message? Now with the Dot Express, you get to read hundreds of inspiring stories that will help
@@ -83,13 +93,16 @@
                 </div>
             </div>
 
-            <div class="platform-point flex ">
-                <div class="illustration w-4/12">
-                    <div class="illustration-container perspectives-iln">
+            <div class="platform-point flex flex-wrap">
+                <div class="illustration  w-full lg:w-4/12">
+                    <div class="w-full lg:hidden mb-12">
+                        <img src="/static/illustrations/perspectivesAsset.svg" alt="Storytelling is powerful">
+                    </div>
+                    <div class="hidden illustration-container perspectives-iln  lg:block">
                         <img src="/static/illustrations/perspectivesAsset.svg" alt="Storytelling is powerful">
                     </div>
                 </div>
-                <div class="text-content w-8/12">
+                <div class="text-content w-full lg:w-8/12">
                     <h3 class="h2">One topic, <br/>A spectrum of perspectives.</h3>
                     <p class="sub-text">Through periodically updated topics, you will get to learn about specific
                         issues, hear from role models, mentors and experts in their fields, giving you a 360<sup>o</sup>
@@ -183,9 +196,18 @@
                             being a botanist, Janaki Ammal showed not only India, but the world that for the sake of
                             ambition, one can overcome anything.</p>
                     </div>
-                    <div class="image-container hidden md:block">
+                    <div class="image-container hidden lg:block">
                         <img class="w-full" src="/static/preview_1_janaka_ammal.jpg" alt="">
                     </div>
+
+                    <div class="mobile image-container block lg:hidden p-0">
+                        <img class="w-full" src="/static/preview_1_janaka_ammal_side1.jpg" alt="">
+                    </div>
+                    <div class="mobile image-container block lg:hidden p-0">
+                        <img class="w-full" src="/static/preview_1_janaka_ammal_side2.jpg" alt="">
+                    </div>
+
+
 
 
                     <div class="stories-preview">
@@ -275,17 +297,17 @@
 
                 <div class="mb-6"></div>
                 <div class="top-buttons">
-                    <a href="/" class="h3">Buy it</a>
-                    <a href="/" class="h3">Gift it</a>
+                    <a target="_blank" href="https://www.amazon.in/that-went-walk-Short-Stories/dp/8193926005" class="h3">Buy it</a>
+                    <a target="_blank" href="https://www.amazon.in/that-went-walk-Short-Stories/dp/8193926005" class="h3">Gift it</a>
                 </div>
                 <div class="mb-6"></div>
-                <p class="h3">For large reprint orders, <a href="/" class="h3">Click Here</a></p>
+                {{--<p class="h3">For large reprint orders, <a href="/" class="h3">Click Here</a></p>--}}
 
                 <div class="mb-8"></div>
                 <div class="availability">
-                    <p class="sub-text font-bold">Available in <a href="/" class="std-link secondary-3">English</a>
-                        <a href="/" class="std-link secondary-2">Telugu</a>
-                        <a href="/" class="std-link secondary-1">Hindi</a></p>
+                    <p class="sub-text font-bold">Available in <span href="/" class="std-link secondary-3">English</span>
+                        <span href="/" class="std-link secondary-2">Telugu</span>
+                        <span href="/" class="std-link secondary-1">Hindi</span></p>
 
                 </div>
                 <img src="/static/illustrations/janakiAsset.svg" alt="">
@@ -302,11 +324,20 @@
             {{--Video--}}
 
             <div class="point flex flex-row-reverse flex-wrap">
-                <div class="img-container w-4/12">
-                    <img src="/static/illustrations/teamAsset.svg" alt="team dot">
+
+
+
+                <div class="img-container w-full mb-12 lg:w-4/12">
+                    <div class="block lg:hidden">
+                        <img src="/static/illustrations/teamAsset.svg" alt="team dot">
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="/static/illustrations/teamAsset.svg" alt="team dot">
+                    </div>
+
                 </div>
 
-                <div class="text-content w-8/12">
+                <div class="text-content w-full lg:w-8/12">
                     <h3 class="h3">Seeking Pioneers, Being Pioneers</h3>
                     <p class="sub-text">The Dot Express is the beloved brain child of founders - Sarada, Reema and
                         Lakshmi. While they bring their own individual flair to the table, it’s their combined effort
@@ -316,10 +347,17 @@
             </div>
 
             <div class="point flex flex-wrap">
-                <div class="img-container w-4/12">
-                    <img src="/static/illustrations/changeAsset.svg" alt="the movement">
+                <div class="img-container w-full mb-12 lg:w-4/12">
+                    <div class="block lg:hidden">
+                        <img src="/static/illustrations/changeAsset.svg" alt="team dot">
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="/static/illustrations/changeAsset.svg" alt="team dot">
+                    </div>
+
                 </div>
-                <div class="text-content w-8/12">
+
+                <div class="text-content w-full lg:w-8/12">
                     <h3 class="h3">The Dot Movement</h3>
                     <p class="sub-text">This movement wants every child to come up with their own answer to ‘What do you
                         want to be when you grow up?’ The Dot Movement believes that possibilities are limitless, and
@@ -330,33 +368,31 @@
         </div>
     </section>
 
-    <section id="stakeholders">
+    <section id="stakeholders" class="container">
 
         <h2 class="hidden">Stakeholders</h2>
+        <h2 class="h2 text-center">This platform also serves:</h2>
         <div class="item-list flex flex-wrap text-center">
             <div class="item w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/academiaAsset.svg" alt="the movement">
                 </div>
                 <h3 class="serif-heading">Teachers & Academia</h3>
-                <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
-                    like jumping out of a spaceship.</p>
+                <p class="body-text"></p>
             </div>
             <div class="item w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/corporatesAsset.svg" alt="the movement">
                 </div>
                 <h3 class="serif-heading">Corporates & Foundations</h3>
-                <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
-                    like jumping out of a spaceship.</p>
+                <p class="body-text"></p>
             </div>
             <div class="item w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/expertsAsset.svg" alt="the movement">
                 </div>
                 <h3 class="serif-heading">Experts & Influencers</h3>
-                <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
-                    like jumping out of a spaceship.</p>
+                <p class="body-text"></p>
             </div>
         </div>
     </section>
@@ -394,5 +430,7 @@
     </div>
 
 </footer>
+<script src="{{asset('/js/jquery.min.js')}}"></script>
+<script src="{{asset('/js/app.js')}}"></script>
 </body>
 </html>

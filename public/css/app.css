@@ -11426,6 +11426,11 @@ video {
   font-size: 18px;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   padding-top: 100px;
 }
@@ -11483,12 +11488,19 @@ body {
 }
 
 .navbar {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 20px 30px 10px;
   z-index: 1000;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.navbar.scrolled {
+  background: #fdfdfd;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.07), 0 3px 6px rgba(156, 156, 156, 0.11);
 }
 
 .navbar .brand {
@@ -11673,6 +11685,58 @@ a.nav-link {
 #stakeholders .icon {
   max-width: 120px;
   margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  html, body {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+
+.mobile-navbar {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 73px;
+  z-index: 1100;
+}
+
+.mobile-navbar.scrolled {
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.07), 0 3px 6px rgba(156, 156, 156, 0.11);
+}
+
+.mobile-navbar.active {
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.mobile-navbar a.nav-link {
+  font-family: "Henriette", sans-serif;
+  padding: 20px 10px;
+  font-size: 1.414rem;
+}
+
+.preview .mobile.image-container {
+  padding: 0 !important;
 }
 
 @media (min-width: 640px){
