@@ -380,25 +380,25 @@
         <h2 class="hidden">Stakeholders</h2>
         <h2 class="h2 text-center">This platform also serves:</h2>
         <div class="item-list flex flex-wrap text-center">
-            <div class="item w-1/3">
+            <div class="item w-full lg:w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/academiaAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Teachers, Academia</h3>
+                <h3 class="serif-heading">Teachers & Academia</h3>
                 <p class="body-text"></p>
             </div>
-            <div class="item w-1/3">
+            <div class="item w-full lg:w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/corporatesAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Corporates, Foundations</h3>
+                <h3 class="serif-heading">Corporates & Foundations</h3>
                 <p class="body-text"></p>
             </div>
-            <div class="item w-1/3">
+            <div class="item w-full lg:w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/expertsAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Experts, Influencers</h3>
+                <h3 class="serif-heading">Experts & Influencers</h3>
                 <p class="body-text"></p>
             </div>
         </div>
