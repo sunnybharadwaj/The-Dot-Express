@@ -57,6 +57,10 @@
             </div>
 
             <h2 class="h3">A place to
+                <div class="block lg:hidden">
+
+                </div>
+
                 <span class="eve-h2 h2 secondary-2">Explore</span>,
                 <span class="eve-h2 h2 secondary-1">Voice</span>, &
                 <span class="eve-h2 h2 secondary-3">Experience</span>.
@@ -305,9 +309,9 @@
 
                 <div class="mb-8"></div>
                 <div class="availability">
-                    <p class="sub-text font-bold">Available in <span href="/" class="std-link secondary-3">English</span>
-                        <span href="/" class="std-link secondary-2">Telugu</span>
-                        <span href="/" class="std-link secondary-1">Hindi</span></p>
+                    <p class="sub-text font-bold">Available in <span href="/" class="block lg:inline-block my-12 std-link secondary-3">English</span>
+                        <span href="/" class="block lg:inline-block my-12 std-link secondary-2">Telugu</span>
+                        <span href="/" class="block lg:inline-block my-12 std-link secondary-1">Hindi</span></p>
 
                 </div>
                 <img src="/static/illustrations/janakiAsset.svg" alt="">
@@ -377,21 +381,21 @@
                 <div class="icon">
                     <img src="/static/illustrations/academiaAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Teachers & Academia</h3>
+                <h3 class="serif-heading">Teachers, Academia</h3>
                 <p class="body-text"></p>
             </div>
             <div class="item w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/corporatesAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Corporates & Foundations</h3>
+                <h3 class="serif-heading">Corporates, Foundations</h3>
                 <p class="body-text"></p>
             </div>
             <div class="item w-1/3">
                 <div class="icon">
                     <img src="/static/illustrations/expertsAsset.svg" alt="the movement">
                 </div>
-                <h3 class="serif-heading">Experts & Influencers</h3>
+                <h3 class="serif-heading">Experts, Influencers</h3>
                 <p class="body-text"></p>
             </div>
         </div>
@@ -409,8 +413,11 @@
 
                 <div class="text-content">
                     <h3 class="h3"><span class="secondary-2 h3">Explore</span>  innovative ideas and opinions.</h3>
+                    <div class="mb-8 lg:hidden"></div>
                     <h3 class="h3">Find your <span class="secondary-1 h3">Voice</span>  by voicing your opinions to the world.</h3>
+                    <div class="mb-8 lg:hidden"></div>
                     <h3 class="h3"><span class="secondary-3 h3">Experience</span>  the world changing into a better place.</h3>
+                    <div class="mb-8 lg:hidden"></div>
                 </div>
                 <div class="max-w-xl mx-auto py-12">
                     <img src="/static/illustrations/changeAsset.svg" alt="the movement">
