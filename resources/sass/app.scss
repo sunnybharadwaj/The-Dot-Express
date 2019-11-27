@@ -1,15 +1,10 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
-
 //Fonts
 @import url("https://use.typekit.net/hse1jve.css");
 
-
 //Variables
-
 
 //Colors
 $background: #FFFCF8;
@@ -21,16 +16,18 @@ $secondary-3: #6D9BBC;
 .primary-color {
   color: $primary
 }
+
 .secondary-1 {
   color: #FFBD45;
 }
+
 .secondary-2 {
   color: #EE772D;
 }
+
 .secondary-3 {
   color: #6D9BBC;
 }
-
 
 //Global
 *, html, body {
@@ -100,10 +97,10 @@ body {
   margin-bottom: 40px;
 }
 
-
 //Navigation
 .navbar {
   padding: 20px 30px 10px;
+  z-index: 1000;
   position: fixed;
   width: 100%;
   top: 0;
@@ -121,17 +118,29 @@ body {
     padding: 20px 20px;
     font-weight: bold;
   }
+
+  .left-links {
+    margin-left: 40px;
+  }
 }
 
 //Spacing
 
 section {
   padding: 60px 0;
+
+  &#topic {
+    padding: 100px 0;
+  }
+
+  &#book {
+    padding: 100px 0;
+  }
 }
 
 .platform-point, #about-us .point {
   padding: 20px 0;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .media-list {
@@ -163,9 +172,8 @@ section {
   }
 }
 
-
 footer {
-  padding:30px;
+  padding: 30px;
 }
 
 //Page styles
@@ -178,12 +186,19 @@ footer {
   background: $background-dark;
   .next-topic-statement {
     background: $background-dark;
-  & *{
-    background: $background-dark;
-  }
+    & * {
+      background: $background-dark;
+    }
 
   }
 }
+
+#topic {
+  .sub-text {
+    margin: 60px 0 10px;
+  }
+}
+
 .text-content {
   padding: 0 20px;
 }
@@ -198,11 +213,90 @@ footer {
   }
 }
 
-.preview  {
+.preview {
+  padding: 40px 0;
   .slide {
+    padding: 40px 0;
+    .body-text {
+      margin-bottom: 30px;
+    }
+    .image-container {
+      padding: 20px 0;
+    }
     .text-content {
       max-width: 800px;
       margin: 0 auto;
     }
   }
 }
+
+//links
+.std-link {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 20px;
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+    color: $primary;
+  }
+}
+
+a {
+  margin: 0 10px;
+  border-bottom: 4px solid $primary;
+  &:hover {
+    border-color: $secondary-1;
+  }
+}
+
+a.nav-link {
+  border: none;
+}
+
+//Illustrations
+
+#hero-section {
+  padding-top: 0 !important;
+  .header-illustration {
+    margin-bottom: -120px;
+  }
+}
+
+#platform-introduction {
+  position: relative;
+  .platform-point {
+    position: relative;
+  }
+  & .illustration-container:nth-of-type(1) {
+    img {
+      position: absolute;
+      width: 510px;
+    }
+  }
+
+  .platform-point:nth-of-type(2) .illustration {
+    position: relative;
+    right: 50px;
+  }
+
+}
+
+.language-iln {
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+
+.media-list .media-item .icon {
+  min-width: 70px;
+  max-width: 130px;
+  margin: 0 auto 20px;
+}
+
+#stakeholders {
+  .icon {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+}
+

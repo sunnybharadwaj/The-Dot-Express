@@ -18,11 +18,12 @@
         <div class="brand block">
             <img src="/static/tde_logo_color.png" alt="The Dot Express">
         </div>
-        <div class="block">
+        <div class="left-links block flex-grow">
             <a href="/" class="nav-link block lg:inline-block">Platform</a>
             <a href="/" class="nav-link block lg:inline-block">Book</a>
             <a href="/" class="nav-link block lg:inline-block">About</a>
         </div>
+
         {{--<div class="block lg:hidden">--}}
         {{--<button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">--}}
         {{--<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>--}}
@@ -38,6 +39,9 @@
 <main>
     <section id="hero-section">
         <div class="container">
+            <div class="header-illustration">
+                <img src="/static/illustrations/endingAsset.svg" alt="Freedom for Children">
+            </div>
             <h1 class="h3">Introducing</h1>
             <div class="mb-2"></div>
             <h1 class="hidden">The Dot Express</h1>
@@ -50,7 +54,9 @@
                 <span class="eve-h2 h2 secondary-1">Voice</span>, &
                 <span class="eve-h2 h2 secondary-3">Experience</span>.
             </h2>
-            <div class="mb-4"></div>
+            <div class="mb-4">
+
+            </div>
             <p class="sub-text max-w-4xl">
                 Through storytelling, this platform gives you the golden ticket to a world of stories, ideas and
                 perspectives, and
@@ -64,7 +70,11 @@
     <section id="platform-introduction">
         <div class="container">
             <div class="platform-point flex flex-wrap flex-row-reverse">
-                <div class="illustration w-4/12"></div>
+                <div class="illustration w-4/12">
+                    <div class="illustration-container">
+                        <img src="/static/illustrations/storytellingAsset.svg" alt="Storytelling is powerful">
+                    </div>
+                </div>
                 <div class="text-content w-8/12">
                     <h3 class="h2">Storytelling as a powerful medium of expression.</h3>
                     <p class="sub-text">From granny’s tales to bedtime stories, didn’t every story leave you with a
@@ -74,7 +84,11 @@
             </div>
 
             <div class="platform-point flex ">
-                <div class="illustration w-4/12"></div>
+                <div class="illustration w-4/12">
+                    <div class="illustration-container perspectives-iln">
+                        <img src="/static/illustrations/perspectivesAsset.svg" alt="Storytelling is powerful">
+                    </div>
+                </div>
                 <div class="text-content w-8/12">
                     <h3 class="h2">One topic, <br/>A spectrum of perspectives.</h3>
                     <p class="sub-text">Through periodically updated topics, you will get to learn about specific
@@ -88,34 +102,48 @@
         <div class="platform-point center text-center">
             <div class="container">
                 <div class="max-w-4xl mx-auto">
-                    <div class="illustration"></div>
+                    <div class="illustration language-iln">
+                        <img src="/static/illustrations/languageAsset.svg" alt="Storytelling is powerful">
+                    </div>
                     <h3 class="h2">Speak your true language.</h3>
                     <p class="sub-text">Find your niche through creative expression! Strongest voices in history have
                         spoken through various forms of work. We urge you to jump onto the creators’ bandwagon and make
                         ripples, your way. </p>
                     <div class="media-list flex flex-wrap">
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/articlesAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Articles</div>
                         </div>
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/poetryAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Poetry</div>
                         </div>
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/artAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Art</div>
                         </div>
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/videosAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Videos</div>
                         </div>
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/podcastsAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Podcasts</div>
                         </div>
                         <div class="media-item w-1/3">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <img src="/static/illustrations/eventsAsset.svg" alt="">
+                            </div>
                             <div class="title h3">Events</div>
                         </div>
                     </div>
@@ -128,11 +156,11 @@
         <div class="container">
             <div class="next-topic-statement">
                 <p class="sans-heading">Next Topic</p>
-                <h2 class="h2">Choosing a career and creating space for the right opportunities.</h2>
+                <h2 class="h2 max-w-4xl">Choosing a career and creating space for the right opportunities.</h2>
 
                 <div class="cta">
                     <p class="sub-text mb-0">We will take your submissions soon.</p>
-                    <p class="h3">Get Creating!</p>
+                    <p class="h3 primary-color">Get Creating!</p>
                 </div>
             </div>
         </div>
@@ -142,9 +170,10 @@
         <div class="container">
             <div class="sans-heading">Our First Book</div>
             <h2 class="h2">The Dot That Went For a Walk</h2>
-            <p class="sub-text">With our first book, we attempted to Change the Narrative of women being damsels in
+            <p class="sub-text max-w-4xl mx-auto">With our first book, we attempted to Change the Narrative of women being damsels in
                 distress. We bring to you stories of 51 Indian Power Women, who have been and continue to be beacons of
                 hope for millions of children in the country. </p>
+        </div>
 
             <div class="preview">
                 <div class="slide">
@@ -154,23 +183,8 @@
                             being a botanist, Janaki Ammal showed not only India, but the world that for the sake of
                             ambition, one can overcome anything.</p>
                     </div>
-
-
-                    <div class="stories-preview">
-                        <div class="stories flex">
-                            <div class="story-left"></div>
-                            <div class="story-right"></div>
-                        </div>
-                        <div class="link">Full Screen</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="text-content">
-                        <h3 class="h3">06. Kamaladevi Chattopadhyay</h3>
-                        <p class="body-text">A visionary throughout her life, Kamaladevi Chattopadhyay wore many hats.
-                            She was a freedom fighter, a women’s rights activist, a pioneer of arts and crafts in India
-                            as well as a theatre enthusiast. She was never afraid of standing up for the causes she
-                            believed in.</p>
+                    <div class="image-container hidden md:block">
+                        <img class="w-full" src="/static/preview_1_janaka_ammal.jpg" alt="">
                     </div>
 
 
@@ -179,76 +193,102 @@
                             <div class="story-left"></div>
                             <div class="story-right"></div>
                         </div>
-                        <div class="link">Full Screen</div>
+                        {{--<div class="link">Full Screen</div>--}}
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="text-content">
-                        <h3 class="h3">29. Indra Nooyi</h3>
-                        <p class="body-text">A global citizen who lives by the motto - ‘Be Yourself’ Indira Nooyi is the
-                            first woman leader to head PepsiCo. Even in her childhood she was an aspiring leader, and
-                            now she serves as the perfect role model and mentor for women aspiring to lead.</p>
-                    </div>
-
-
-                    <div class="stories-preview">
-                        <div class="stories flex">
-                            <div class="story-left"></div>
-                            <div class="story-right"></div>
+                <div class="hidden">
+                    <div class="slide">
+                        <div class="text-content">
+                            <h3 class="h3">06. Kamaladevi Chattopadhyay</h3>
+                            <p class="body-text">A visionary throughout her life, Kamaladevi Chattopadhyay wore many hats.
+                                She was a freedom fighter, a women’s rights activist, a pioneer of arts and crafts in India
+                                as well as a theatre enthusiast. She was never afraid of standing up for the causes she
+                                believed in.</p>
                         </div>
-                        <div class="link">Full Screen</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="text-content">
-                        <h3 class="h3">35. Kalpana Chawla</h3>
-                        <p class="body-text">Through her contribution to NASA and her journeys to space, Kalpana Chawla
-                            became a household name across the globe. She broke barriers at every level, to achieve her
-                            goals, and truly lives on as a citizen of the galaxy.</p>
-                    </div>
 
 
-                    <div class="stories-preview">
-                        <div class="stories flex">
-                            <div class="story-left"></div>
-                            <div class="story-right"></div>
+                        <div class="stories-preview">
+                            <div class="stories flex">
+                                <div class="story-left"></div>
+                                <div class="story-right"></div>
+                            </div>
+                            <div class="link">Full Screen</div>
                         </div>
-                        <div class="link">Full Screen</div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="text-content">
-                        <h3 class="h3">47. Deepika Padukone</h3>
-                        <p class="body-text">A name all too well known for her amazing performances on screen, Deepika
-                            Padukone has a very strong, multi-talented personality. She is one of the most influential
-                            people in India, to set out to change the mindset around mental health, by publicly speaking
-                            about her experience with depression.</p>
-                    </div>
-
-
-                    <div class="stories-preview">
-                        <div class="stories flex">
-                            <div class="story-left"></div>
-                            <div class="story-right"></div>
+                    <div class="slide">
+                        <div class="text-content">
+                            <h3 class="h3">29. Indra Nooyi</h3>
+                            <p class="body-text">A global citizen who lives by the motto - ‘Be Yourself’ Indira Nooyi is the
+                                first woman leader to head PepsiCo. Even in her childhood she was an aspiring leader, and
+                                now she serves as the perfect role model and mentor for women aspiring to lead.</p>
                         </div>
-                        <div class="link">Full Screen</div>
+
+
+                        <div class="stories-preview">
+                            <div class="stories flex">
+                                <div class="story-left"></div>
+                                <div class="story-right"></div>
+                            </div>
+                            <div class="link">Full Screen</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text-content">
+                            <h3 class="h3">35. Kalpana Chawla</h3>
+                            <p class="body-text">Through her contribution to NASA and her journeys to space, Kalpana Chawla
+                                became a household name across the globe. She broke barriers at every level, to achieve her
+                                goals, and truly lives on as a citizen of the galaxy.</p>
+                        </div>
+
+
+                        <div class="stories-preview">
+                            <div class="stories flex">
+                                <div class="story-left"></div>
+                                <div class="story-right"></div>
+                            </div>
+                            <div class="link">Full Screen</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="text-content">
+                            <h3 class="h3">47. Deepika Padukone</h3>
+                            <p class="body-text">A name all too well known for her amazing performances on screen, Deepika
+                                Padukone has a very strong, multi-talented personality. She is one of the most influential
+                                people in India, to set out to change the mindset around mental health, by publicly speaking
+                                about her experience with depression.</p>
+                        </div>
+
+
+                        <div class="stories-preview">
+                            <div class="stories flex">
+                                <div class="story-left"></div>
+                                <div class="story-right"></div>
+                            </div>
+                            <div class="link">Full Screen</div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+        <div class="container">
             <div class="cta">
-                <div class="availability">
-                    <p class="sub-text font-bold">Available in</p>
-                    <div class="lang-links">
-                        <a href="/" class="std-link">English</a>
-                        <a href="/" class="std-link">Telugu</a>
-                        <a href="/" class="std-link">Hindi</a>
-                    </div>
-                </div>
+
+                <div class="mb-6"></div>
                 <div class="top-buttons">
-                    <a href="/" class="std-link h3">Buy it</a>
-                    <a href="/" class="std-link h3">Gift it</a>
+                    <a href="/" class="h3">Buy it</a>
+                    <a href="/" class="h3">Gift it</a>
                 </div>
+                <div class="mb-6"></div>
                 <p class="h3">For large reprint orders, <a href="/" class="h3">Click Here</a></p>
+
+                <div class="mb-8"></div>
+                <div class="availability">
+                    <p class="sub-text font-bold">Available in <a href="/" class="std-link secondary-3">English</a>
+                        <a href="/" class="std-link secondary-2">Telugu</a>
+                        <a href="/" class="std-link secondary-1">Hindi</a></p>
+
+                </div>
+                <img src="/static/illustrations/janakiAsset.svg" alt="">
             </div>
         </div>
 
@@ -263,7 +303,7 @@
 
             <div class="point flex flex-row-reverse flex-wrap">
                 <div class="img-container w-4/12">
-                    <img src="/" alt="team dot">
+                    <img src="/static/illustrations/teamAsset.svg" alt="team dot">
                 </div>
 
                 <div class="text-content w-8/12">
@@ -277,7 +317,7 @@
 
             <div class="point flex flex-wrap">
                 <div class="img-container w-4/12">
-                    <img src="/" alt="the movement">
+                    <img src="/static/illustrations/changeAsset.svg" alt="the movement">
                 </div>
                 <div class="text-content w-8/12">
                     <h3 class="h3">The Dot Movement</h3>
@@ -295,19 +335,25 @@
         <h2 class="hidden">Stakeholders</h2>
         <div class="item-list flex flex-wrap text-center">
             <div class="item w-1/3">
-                <div class="icon"></div>
+                <div class="icon">
+                    <img src="/static/illustrations/academiaAsset.svg" alt="the movement">
+                </div>
                 <h3 class="serif-heading">Teachers & Academia</h3>
                 <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
                     like jumping out of a spaceship.</p>
             </div>
             <div class="item w-1/3">
-                <div class="icon"></div>
+                <div class="icon">
+                    <img src="/static/illustrations/corporatesAsset.svg" alt="the movement">
+                </div>
                 <h3 class="serif-heading">Corporates & Foundations</h3>
                 <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
                     like jumping out of a spaceship.</p>
             </div>
             <div class="item w-1/3">
-                <div class="icon"></div>
+                <div class="icon">
+                    <img src="/static/illustrations/expertsAsset.svg" alt="the movement">
+                </div>
                 <h3 class="serif-heading">Experts & Influencers</h3>
                 <p class="body-text">I’m nobody’s taxi service; I’m not gonna be there to catch you every time you feel
                     like jumping out of a spaceship.</p>
@@ -330,6 +376,10 @@
                     <h3 class="h3">Find your <span class="secondary-1 h3">Voice</span>  by voicing your opinions to the world.</h3>
                     <h3 class="h3"><span class="secondary-3 h3">Experience</span>  the world changing into a better place.</h3>
                 </div>
+                <div class="max-w-xl mx-auto py-12">
+                    <img src="/static/illustrations/changeAsset.svg" alt="the movement">
+                </div>
+
                 <p class="h2 primary-color">See you soon!</p>
             </div>
 

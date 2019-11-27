@@ -11484,6 +11484,7 @@ body {
 
 .navbar {
   padding: 20px 30px 10px;
+  z-index: 1000;
   position: fixed;
   width: 100%;
   top: 0;
@@ -11503,13 +11504,25 @@ body {
   font-weight: bold;
 }
 
+.navbar .left-links {
+  margin-left: 40px;
+}
+
 section {
   padding: 60px 0;
 }
 
+section#topic {
+  padding: 100px 0;
+}
+
+section#book {
+  padding: 100px 0;
+}
+
 .platform-point, #about-us .point {
   padding: 20px 0;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .media-list {
@@ -11558,6 +11571,10 @@ footer {
   background: #F7E6D5;
 }
 
+#topic .sub-text {
+  margin: 60px 0 10px;
+}
+
 .text-content {
   padding: 0 20px;
 }
@@ -11570,8 +11587,91 @@ footer {
   margin: 0 auto;
 }
 
+.preview {
+  padding: 40px 0;
+}
+
+.preview .slide {
+  padding: 40px 0;
+}
+
+.preview .slide .body-text {
+  margin-bottom: 30px;
+}
+
+.preview .slide .image-container {
+  padding: 20px 0;
+}
+
 .preview .slide .text-content {
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.std-link {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 20px;
+  border-bottom: none;
+}
+
+.std-link:hover {
+  border-bottom: none;
+  color: #E63B3B;
+}
+
+a {
+  margin: 0 10px;
+  border-bottom: 4px solid #E63B3B;
+}
+
+a:hover {
+  border-color: #FFBD45;
+}
+
+a.nav-link {
+  border: none;
+}
+
+#hero-section {
+  padding-top: 0 !important;
+}
+
+#hero-section .header-illustration {
+  margin-bottom: -120px;
+}
+
+#platform-introduction {
+  position: relative;
+}
+
+#platform-introduction .platform-point {
+  position: relative;
+}
+
+#platform-introduction .illustration-container:nth-of-type(1) img {
+  position: absolute;
+  width: 510px;
+}
+
+#platform-introduction .platform-point:nth-of-type(2) .illustration {
+  position: relative;
+  right: 50px;
+}
+
+.language-iln {
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+
+.media-list .media-item .icon {
+  min-width: 70px;
+  max-width: 130px;
+  margin: 0 auto 20px;
+}
+
+#stakeholders .icon {
+  max-width: 120px;
   margin: 0 auto;
 }
 
